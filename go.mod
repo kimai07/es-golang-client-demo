@@ -1,4 +1,4 @@
-module github.com/kenji-imi/es-demo
+module github.com/kenji-imi/es-golang-client-demo
 
 go 1.14
 

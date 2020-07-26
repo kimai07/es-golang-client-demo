@@ -1,0 +1,17 @@
+#http.host: 0.0.0.0
+network.host: 0.0.0.0
+
+bootstrap.memory_lock: true
+
+# Cluster settings
+cluster.name: es-cluster
+# discovery.zen.ping.unicast.hosts: ['elasticsearch01', 'elasticsearch02', 'elasticsearch03']
+discovery.zen.ping.unicast.hosts: ['elasticsearch']
+## This setting must be set to a quorum of your master eligible nodes.
+discovery.zen.minimum_master_nodes: 1
+
+### x-pack functions
+xpack.security.enabled: false
+xpack.monitoring.enabled: true
+xpack.graph.enabled: true
+xpack.watcher.enabled: false
